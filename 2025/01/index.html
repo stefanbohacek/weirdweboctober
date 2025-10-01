@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100"
+  data-bs-theme="auto">
+
+<head>
+  <base href="/2025/01/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="">
+  <title>Weird Web October 2025 #1: Transparency</title>
+
+  <link href="styles.css"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Weird Web October 2025 #1: Transparency</h1>
+    <div class="image-container"
+      role="img"
+      aria-label="A slider below an image reveals another image underneath it.">
+      <img src="./images/skeleton-dance.gif"
+        width="498"
+        height="427"
+        class="bottom-image"
+        alt="An animated GIF of skeletons dancing." />
+      <img src="./images/graveyard.jpg"
+        title="Spooky!"
+        width="498"
+        height="427"
+        class="top-image"
+        id="topImage"
+        alt="A black and white photo of a graveyard." />
+    </div>
+
+    <div class="slider-control">
+      <label for="opacitySlider"
+        class="opacity-label">
+        Opacity
+      </label>
+      <input type="range"
+        min="0"
+        max="100"
+        value="100"
+        id="opacitySlider"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="100"
+        aria-label="Adjust graveyard image opacity to reveal dancing skeleton">
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
