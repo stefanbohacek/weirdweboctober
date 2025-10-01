@@ -45,3 +45,11 @@ body {
 input[type="range"] {
   width: 100%;
 }
+
+h1 a {
+  color: #fff;
+}
+
+h1 a:hover {
+  color: #dadada;
+}

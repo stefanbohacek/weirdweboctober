@@ -16,4 +16,5 @@ body {
     "Sitka Small", serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-size: 1.4rem;
 }
