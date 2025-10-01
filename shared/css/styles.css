@@ -1,28 +1,19 @@
+:root {
+  color-scheme: light dark;
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+  }
+}
+
 body {
   font-family: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
     "Sitka Small", serif;
-}
-
-.text-start {
-  text-align: start;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-end {
-  text-align: end;
-}
-
-.mx-auto {
-  margin: 0 auto;
-}
-
-.d-inline-block {
-  display: inline-block;
-}
-
-.p-0 {
-  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }

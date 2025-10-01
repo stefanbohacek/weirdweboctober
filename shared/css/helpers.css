@@ -1,0 +1,23 @@
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.p-0 {
+  padding: 0;
+}
