@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100"
+  data-bs-theme="auto">
+
+<head>
+  <base href="/2025/02/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Spooky season begins!">
+  <meta name="fediverse:creator"
+    content="@stefan@stefanbohacek.online" />
+  <title>Weird Web October 2025 #2: Maps</title>
+  <link href="../../shared/css/styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/helpers.css"
+    rel="stylesheet">
+  <link rel="preload"
+    as="fetch"
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/02/">
+  <link rel="octo:octothorpes"
+    href="weirdweboctober">
+  <link rel="octo:octothorpes"
+    href="Transparency">
+</head>
+
+<body>
+  <main class="mx-auto">
+    <h1>
+      <a href="/">Weird Web October 2025</a> #2: Maps
+    </h1>
+    <div id="bot"
+      class="mx-auto">
+      <p aria-live="polite"
+        aria-atomic="true">
+        <em id="description"></em>
+        <span id="title"></span>
+      </p>
+      <p>
+        <button id="another"
+          class="d-none"
+          aria-label="Load another random map">Another one!</button>
+      </p>
+
+      <div id="mastodon-post-container"
+        role="complementary"
+        aria-label="Mastodon post embed">
+        <iframe id="iframe"
+          class="mastodon-embed mx-auto"
+          title="Mastodon post with map"></iframe>
+      </div>
+    </div>
+  </main>
+  <script type="module"
+    src="scripts.js"></script>
+</body>
+
+</html>

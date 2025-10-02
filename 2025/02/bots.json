@@ -1,0 +1,110 @@
+[
+  {
+    "name": "@countryflashcardbot",
+    "description": "Flash card map of a random country.",
+    "username": "@countryflashcardbot",
+    "server": "mastodon.social",
+    "url": "https://mastodon.social/@countryflashcardbot"
+  },
+  {
+    "name": "Best Coffee in Town",
+    "description": "The best Coffee places around the world.",
+    "username": "@bestcoffeeintown",
+    "server": "botsin.space",
+    "url": "https://botsin.space/@bestcoffeeintown",
+    "active": false
+  },
+  {
+    "name": "Lighthouses",
+    "description": "Lighthouses around the world.",
+    "username": "@lighthouses",
+    "server": "stefanbohacek.online",
+    "url": "https://stefanbohacek.online/@lighthouses"
+  },
+  {
+    "name": "Vzvzvz!",
+    "description": "The sound of \"bee buzzing\" in Albanian.",
+    "username": "@vzvzvz",
+    "server": "stefanbohacek.online",
+    "url": "https://stefanbohacek.online/@vzvzvz"
+  },
+  {
+    "name": "UnmappedSmallTownUSA",
+    "description": "Bringing attention to undermapped American towns.",
+    "username": "@SmallTownUSA",
+    "server": "en.osm.town",
+    "url": "https://en.osm.town/@SmallTownUSA"
+  },
+  {
+    "name": "Improbable Maps",
+    "description": "Charting new places.",
+    "username": "@improbablemaps",
+    "server": "mastodon.social"
+  },
+  {
+    "name": "helicoptersofdc",
+    "description": "Helicopters over DC.",
+    "username": "@helicoptersofdc",
+    "server": "botsin.space",
+    "url": "https://botsin.space/@helicoptersofdc",
+    "active": false
+  },
+  {
+    "name": "OpenStreetMap RestoBot",
+    "description": "Cleaning up OpenStreetMap.",
+    "username": "@restobot",
+    "server": "botsin.space",
+    "url": "https://botsin.space/@restobot",
+    "active": false
+  },
+  {
+    "name": "City Pairs",
+    "description": "Cities that share the same name.",
+    "username": "@citypairs",
+    "server": "mas.to"
+  },
+  {
+    "name": "Town Builder Bot",
+    "description": "Let's build a town, together!",
+    "username": "@TownBuilder",
+    "server": "hachyderm.io"
+  },
+  {
+    "name": "Weird Spy Satellites",
+    "description": "Speculative surveillance.",
+    "username": "@weirdsatellite",
+    "server": "mastodon.art",
+    "url": "https://mastodon.art/@weirdsatellite"
+  },
+  {
+    "name": "Hello, world!",
+    "description": "Hello from around the world.",
+    "username": "@helloworld",
+    "server": "stefanbohacek.online",
+    "url": "https://stefanbohacek.online/@helloworld"
+  },
+  {
+    "name": "Libraries",
+    "description": "Libraries around the world!",
+    "username": "@libraries",
+    "server": "stefanbohacek.online"
+  },
+  {
+    "name": "National Parks",
+    "description": "National parks around the world!",
+    "username": "@NationalParks",
+    "server": "stefanbohacek.online"
+  },
+  {
+    "name": "Parks",
+    "description": "Parks around the world.",
+    "username": "@parks",
+    "server": "stefanbohacek.online"
+  },
+  {
+    "name": "Train Stations",
+    "description": "Train stations around the world.",
+    "username": "@trainstations",
+    "server": "stefanbohacek.online"
+  }
+]

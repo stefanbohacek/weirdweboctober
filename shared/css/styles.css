@@ -18,3 +18,27 @@ body {
   color: var(--text-color);
   font-size: 1.4rem;
 }
+
+main{
+  max-width: 960px;
+}
+
+#iframe.mastodon-embed {
+  width: 400px;
+  max-width: 100%;
+  aspect-ratio: 4 / 7;
+  border: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+s{
+  opacity: .75;
+}
+
+button{
+  padding: 8px;
+  font-weight: bold;
+}

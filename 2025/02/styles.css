@@ -1,0 +1,55 @@
+body {
+  font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container .top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.1s ease;
+}
+
+.image-container .bottom-image {
+  position: relative;
+}
+
+.slider-control {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+h1 a {
+  color: #fff;
+}
+
+h1 a:hover {
+  color: #dadada;
+}
