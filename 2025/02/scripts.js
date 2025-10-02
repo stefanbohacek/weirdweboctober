@@ -43,7 +43,7 @@ const showRandomBot = async () => {
   setTimeout(() => {
     anotherOneBtn.disabled = false;
     anotherOneBtn.removeAttribute("aria-busy");
-    anotherOneBtn.focus();
+    // anotherOneBtn.focus();
   }, 2000);
 };
 
