@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100"
+  data-bs-theme="auto">
+
+<head>
+  <base href="/2025/03/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Spooky season begins!">
+  <meta name="fediverse:creator"
+    content="@stefan@stefanbohacek.online" />
+  <title>Weird Web October 2025 #1: Transparency</title>
+  <link href="../../shared/css/styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/helpers.css"
+    rel="stylesheet">
+  <link href="styles.css"
+    rel="stylesheet">
+  <link rel="preload"
+    as="fetch"
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/03/">
+  <link rel="octo:octothorpes"
+    href="weirdweboctober">
+  <link rel="octo:octothorpes"
+    href="Transparency">
+</head>
+
+<body>
+  <main class="mx-auto">
+    <h1 class="mt-0">
+      <a href="/">Weird Web October 2025</a> #3: Scramble
+    </h1>
+    <div class="image-container"
+      role="img"
+      aria-label="A slider below an image increases the level of 'brain scramble'. The brain starts to bob in response, overlaid with an animated scribble GIF.">
+
+      <img src="images/background.png"
+        width="498"
+        height="427"
+        class="bottom-layer"
+        alt="" />
+      <img id="brain" src="images/brain.png"
+        width="498"
+        height="427"
+        class="middle-layer float"
+        alt="" />
+      <img src="images/base.png"
+        width="498"
+        height="427"
+        class="top-layer"
+        alt="" />
+      <img id="scribble" src="images/scribble.gif"
+        width="498"
+        height="427"
+        class="scribble-layer"
+        style="opacity: 0;"
+        alt="" />
+    </div>
+
+    <div class="slider-control">
+      <label for="scrambleSlider"
+        class="opacity-label">
+        Scramble
+      </label>
+      <input type="range"
+        min="0"
+        max="100"
+        value="0"
+        id="slider"
+        class="w-100"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="100"
+        aria-label="Adjust level of 'brain scramble'">
+    </div>
+    <p><small>Photo credit: <a href="https://unsplash.com/@gasparuhas">Gaspar Uhas</a></small></p>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

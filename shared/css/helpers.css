@@ -18,16 +18,18 @@
   display: inline-block;
 }
 
-.d-none{
+.d-none {
   display: none;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .p-0 {
   padding: 0;
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
-
-

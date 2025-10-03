@@ -1,0 +1,71 @@
+body {
+  font-family: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+    "Sitka Small", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  rotate: 359deg;
+}
+
+.image-container img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  height: auto;
+  display: block;
+}
+
+.image-container .top-layer,
+.image-container .middle-layer,
+.image-container .scribble-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.1s ease;
+}
+
+.image-container .bottom-layer {
+  position: relative;
+}
+
+.slider-control {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--float-distance, 3px));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#brain {
+  --float-distance: 3px;
+}
+
+#scribble {
+  transform-origin: top center;
+}
