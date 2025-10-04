@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100"
+  data-bs-theme="auto">
+
+<head>
+  <base href="/2025/04/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="They live. We sleep.">
+  <meta name="fediverse:creator"
+    content="@stefan@stefanbohacek.online" />
+  <title>Weird Web October 2025 #4: Filters</title>
+  <link href="styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/helpers.css"
+    rel="stylesheet">
+  <link rel="preload"
+    as="fetch"
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/04/">
+  <link rel="octo:octothorpes"
+    href="weirdweboctober">
+  <link rel="octo:octothorpes"
+    href="Filters">
+</head>
+
+<body>
+  <main>
+    <h1>
+      <a href="/">Weird Web October 2025</a> #4: Filters
+    </h1>
+    <div class="image-container"
+      role="img"
+      aria-label="A slider below an image reveals another image underneath it.">
+      <img src="./images/unfiltered.png"
+        width="498"
+        height="427"
+        class="bottom-image"
+        alt="A two-by-two grid of four images from the 1988 horror/sci-fi movie They Live showing a travel ad with a woman laying in shallow water on a beach on the side of a building, a restaurant sign, a store with a 'Close out sale' sign, and a close-up view of a hand holding dollar bills." />
+      <img src="./images/filtered.png"
+        title="They live. We sleep."
+        width="498"
+        height="427"
+        class="top-image"
+        id="top-image"
+        alt="Adjusting the 'filter' slider reveals signs that read: MARRY AND REPRODUCE, NO INDEPENDENT THOUGHT, CONSUME, THIS IS YOUR GOD" />
+    </div>
+    <div class="slider-control">
+      <label for="slider">
+        Filter: <span id="slider-value"
+          aria-live="polite">100</span>%
+      </label>
+      <input type="range"
+        min="0"
+        max="100"
+        value="100"
+        id="slider"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-label="Adjust graveyard image opacity to reveal dancing skeleton">
+    </div>
+    <p class="text-center">
+      <a href="https://en.wikipedia.org/wiki/They_Live"><em>They Live</em></a>
+    </p>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
