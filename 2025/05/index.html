@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100"
+  data-bs-theme="auto">
+
+<head>
+  <base href="/2025/05/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="They live. We sleep.">
+  <meta name="fediverse:creator"
+    content="@stefan@stefanbohacek.online" />
+  <title>Weird Web October 2025 #5: Remix</title>
+  <link href="styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/helpers.css"
+    rel="stylesheet">
+  <link rel="preload"
+    as="fetch"
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/05/">
+  <link rel="octo:octothorpes"
+    href="weirdweboctober">
+  <link rel="octo:octothorpes"
+    href="Remix">
+</head>
+
+<body>
+  <main>
+    <h1 class="mb-5">
+      <a href="/">Weird Web October 2025</a> #5: Remix
+    </h1>
+
+    <p class="text-center">
+      <img src="images/chopin.png"
+        width="648"
+        height="420"
+        alt="A 1849 black-and-white photo of Frédéric Chopin, a white man with medium-long hair, wearing a suit and a coat. Next to it is a page of sheet music for his Prelude in E minor."
+        title="Frédéric Chopin and his Prelude in E minor."
+        />
+    </p>
+    <p class="text-center">
+      <button id="play-btn">Play</button>
+      <button id="stop-btn">Stop</button>
+      <button id="record-btn">Start recording</button>
+      <button id="download-btn"
+        disabled>Download recording</button>
+    </p>
+
+    <div id="controls">
+
+      <div class="slider-control">
+        <label for="pitch-slider">
+          Pitch: <span id="pitch-value"
+            aria-live="polite">0</span> semitones
+        </label>
+        <input type="range"
+          min="-12"
+          max="12"
+          value="0"
+          id="pitch-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="tempo-slider">
+          Tempo: <span id="tempo-value"
+            aria-live="polite">100</span>%
+        </label>
+        <input type="range"
+          min="50"
+          max="200"
+          value="100"
+          id="tempo-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="volume-slider">
+          Volume: <span id="volume-value"
+            aria-live="polite">0</span> dB
+        </label>
+        <input type="range"
+          min="-30"
+          max="0"
+          value="0"
+          id="volume-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="density-slider">
+          Note density: <span id="density-value"
+            aria-live="polite">100</span>%
+        </label>
+        <input type="range"
+          min="0"
+          max="100"
+          value="100"
+          id="density-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="distortion-slider">
+          Distortion: <span id="distortion-value"
+            aria-live="polite">0</span>%
+        </label>
+        <input type="range"
+          min="0"
+          max="100"
+          value="0"
+          id="distortion-slider">
+      </div>
+
+
+      <div class="slider-control">
+        <label for="delay-slider">
+          Delay: <span id="delay-value"
+            aria-live="polite">0</span>%
+        </label>
+        <input type="range"
+          min="0"
+          max="100"
+          value="0"
+          id="delay-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="filter-slider">
+          Filter cutoff: <span id="filter-value"
+            aria-live="polite">5,000</span> Hz
+        </label>
+        <input type="range"
+          min="100"
+          max="5000"
+          value="5000"
+          id="filter-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="reverb-slider">
+          Reverb: <span id="reverb-value"
+            aria-live="polite">0</span>%
+        </label>
+        <input type="range"
+          min="0"
+          max="100"
+          value="0"
+          id="reverb-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="attack-slider">
+          Attack: <span id="attack-value"
+            aria-live="polite">0.02</span>s
+        </label>
+        <input type="range"
+          min="0"
+          max="100"
+          value="2"
+          id="attack-slider">
+      </div>
+
+      <div class="slider-control">
+        <label for="release-slider">
+          Release: <span id="release-value"
+            aria-live="polite">1</span>s
+        </label>
+        <input type="range"
+          min="10"
+          max="500"
+          value="100"
+          id="release-slider">
+      </div>
+
+    </div>
+
+    <p class="text-center">
+      <a href="https://en.wikipedia.org/wiki/Prelude,_Op._28,_No._4_(Chopin)"><em>Prelude Op. 28, No. 4 by Frédéric
+          Chopin</em></a>
+    </p>
+  </main>
+
+  <script src="../../shared/libs/tone.js/15.1.22/tone.min.js"></script>
+  <script type="module"
+    src="scripts.js"></script>
+</body>
+
+</html>

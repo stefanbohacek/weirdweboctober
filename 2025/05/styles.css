@@ -1,0 +1,27 @@
+body {
+  font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+#controls{
+  padding: 20px;
+border-radius: 8px;
+  border: 2px solid gray;
+  margin: 3rem auto;
+}
+
+.slider-control {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+}
