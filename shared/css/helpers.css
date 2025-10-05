@@ -14,6 +14,11 @@
   margin: 0 auto;
 }
 
+.mx-auto .mastodon-embed {
+  margin: 0 auto !important;
+}
+
+
 .d-inline-block {
   display: inline-block;
 }
@@ -24,6 +29,18 @@
 
 .mt-0 {
   margin-top: 0;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
 }
 
 .mb-5 {
