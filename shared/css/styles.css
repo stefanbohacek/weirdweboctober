@@ -23,6 +23,10 @@ main{
   max-width: 960px;
 }
 
+main.fluid{
+  max-width: initial;
+}
+
 #iframe.mastodon-embed {
   width: 400px;
   max-width: 100%;
@@ -41,4 +45,8 @@ s{
 button{
   padding: 8px;
   font-weight: bold;
+}
+
+.z-10{
+  z-index: 10;
 }
