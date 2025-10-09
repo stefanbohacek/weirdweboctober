@@ -12,7 +12,6 @@ body {
 .html-tree {
   font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
     "DejaVu Sans Mono", monospace;
-  cursor: pointer;
   max-width: 960px;
   margin: 0 auto;
 }
