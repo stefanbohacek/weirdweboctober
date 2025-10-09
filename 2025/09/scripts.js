@@ -25,26 +25,39 @@ ready(async () => {
     }
   });
 
+  console.log("window.webgazer", window.webgazer);
+
   if (window.webgazer) {
     let wasLookingAway = false;
     let hasSeenValidData = false;
+    let dataCount = 0;
 
     webgazer
       .setGazeListener((data, elapsedTime) => {
+        dataCount++;
+
+        if (dataCount % 60 === 0) {
+          console.log({
+            data,
+            hasSeenValidData,
+          });
+        }
+
         if (data != null) {
           hasSeenValidData = true;
           wasLookingAway = false;
         }
 
         if (data == null && hasSeenValidData && !wasLookingAway) {
+          console.log("blink detected");
           updatePoem(poemContainer);
           wasLookingAway = true;
         }
       })
       .begin();
 
-    webgazer.showVideoPreview(false);
-    webgazer.showPredictionPoints(false);
+    webgazer.showVideoPreview(true);
+    webgazer.showPredictionPoints(true);
   }
 
   updatePoem(poemContainer);
