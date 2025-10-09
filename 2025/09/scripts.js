@@ -1,4 +1,5 @@
 import ready from "../../shared/js/ready.js";
+import isMobile from "../../shared/js/isMobile.js";
 import randomFromArray from "../../shared/js/randomFromArray.js";
 
 ready(async () => {
@@ -31,14 +32,17 @@ ready(async () => {
   });
 
   let lastBlinkTime = 0;
-  const BLINK_DEBOUNCE = 1000;
+  const BLINK_DEBOUNCE = isMobile() ? 3000 : 1000;
 
   document.addEventListener("blink", (e) => {
-    console.log("blink event received", e.detail);
-    const currentTime = Date.now();
-    if (currentTime - lastBlinkTime > BLINK_DEBOUNCE) {
-      updatePoem(poemContainer);
-      lastBlinkTime = currentTime;
+    if (e.detail.faceDetected) {
+      console.log("blink event received", e.detail);
+
+      const currentTime = Date.now();
+      if (currentTime - lastBlinkTime > BLINK_DEBOUNCE) {
+        updatePoem(poemContainer);
+        lastBlinkTime = currentTime;
+      }
     }
   });
 
