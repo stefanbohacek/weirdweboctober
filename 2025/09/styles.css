@@ -1,0 +1,15 @@
+body {
+  font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#poem-container {
+  min-height: 400px;
+}
