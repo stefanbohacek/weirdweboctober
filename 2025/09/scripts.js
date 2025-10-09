@@ -25,37 +25,31 @@ ready(async () => {
     }
   });
 
-  console.log("window.webgazer", window.webgazer);
-
   if (window.webgazer) {
-    let previousDataWasValid = false;
-    let dataCount = 0;
     let validDataCount = 0;
+    let nullCount = 0;
+    let blinkCooldown = 0;
 
     webgazer
       .setGazeListener((data, elapsedTime) => {
-        dataCount++;
-
-        if (dataCount % 60 === 0) {
-          console.log({
-            data: data !== null,
-            validDataCount,
-            totalCount: dataCount
-          });
-        }
-
         const currentDataIsValid = data !== null;
 
         if (currentDataIsValid) {
           validDataCount++;
+          nullCount = 0;
+        } else if (validDataCount > 30) {
+          nullCount++;
+
+          if (nullCount >= 3 && blinkCooldown === 0) {
+            console.log("blink detected");
+            updatePoem(poemContainer);
+            blinkCooldown = 60;
+          }
         }
 
-        if (previousDataWasValid && !currentDataIsValid && validDataCount > 30) {
-          console.log("blink detected");
-          updatePoem(poemContainer);
+        if (blinkCooldown > 0) {
+          blinkCooldown--;
         }
-
-        previousDataWasValid = currentDataIsValid;
       })
       .begin();
 
