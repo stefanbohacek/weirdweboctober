@@ -32,22 +32,22 @@
     <h1>
       <a href="/">Weird Web October 2025</a> #4: Blink
     </h1>
-    <div id="poem-container"
-      class="cursor-pointer"
-      role="button"
-      tabindex="0"
-      aria-live="polite"
-      aria-label="A random poem that changes when you click, tap, hit enter, or blink.">
+    <div id="poem-container-wrapper">
+      <div id="poem-container"
+        tabindex="0"
+        aria-live="polite"
+        aria-label="A random poem that changes when you click, tap, hit enter, or blink.">
+      </div>
     </div>
   </main>
-  <video id="video"
-    playsinline></video>
-    <!--
+  <!--
+      <video id="video"
+        playsinline></video>
       <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0/dist/tf.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection@1.0.2/dist/face-landmarks-detection.min.js"></script>
       <script src="/shared//libs/blink-detection/index.js"></script>
+      <script src="/shared//libs/blink-detection/demo.js"></script>
     -->
-  <script src="/shared//libs/blink-detection/demo.js"></script>
   <script type="module"
     src="scripts.js"></script>
 </body>

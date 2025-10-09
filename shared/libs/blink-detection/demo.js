@@ -52544,12 +52544,12 @@ parcelRequire = (function (e, r, t, n) {
         function a() {
           console.log("blink detected");
 
-          const longBlinkEvent = new CustomEvent("blink", {
+          const blinkEvent = new CustomEvent("blink", {
             bubbles: true,
             detail: { timestamp: Date.now() },
           });
 
-          document.dispatchEvent(longBlinkEvent);
+          document.dispatchEvent(blinkEvent);
         }
         var o;
         const l = async () => {

@@ -11,7 +11,7 @@ body {
   overflow: hidden;
 }
 
-#poem-container {
+#poem-container-wrapper {
   min-height: 400px;
 }
 
