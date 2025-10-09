@@ -6,12 +6,17 @@ ready(async () => {
   const poems = await resp.json();
   const poemContainer = document.getElementById("poem-container");
 
+  if (!poemContainer) {
+    console.error("Poem container not found!");
+    return;
+  }
+
   const updatePoem = (poemContainer) => {
     const poem = randomFromArray(poems);
     poemContainer.innerHTML = /* html */ `
-  <p>${poem.lines.join("<br />")}</p>
-  <p>—${poem.author}</p>
-  `;
+        <p>${poem.lines.join("<br />")}</p>
+        <p>—${poem.author}</p>
+      `;
   };
 
   poemContainer.addEventListener("click", () => {
@@ -25,37 +30,17 @@ ready(async () => {
     }
   });
 
-  if (window.webgazer) {
-    let validDataCount = 0;
-    let nullCount = 0;
-    let blinkCooldown = 0;
+  let lastBlinkTime = 0;
+  const BLINK_DEBOUNCE = 1000;
 
-    webgazer
-      .setGazeListener((data, elapsedTime) => {
-        const currentDataIsValid = data !== null;
-
-        if (currentDataIsValid) {
-          validDataCount++;
-          nullCount = 0;
-        } else if (validDataCount > 30) {
-          nullCount++;
-
-          if (nullCount >= 3 && blinkCooldown === 0) {
-            console.log("blink detected");
-            updatePoem(poemContainer);
-            blinkCooldown = 60;
-          }
-        }
-
-        if (blinkCooldown > 0) {
-          blinkCooldown--;
-        }
-      })
-      .begin();
-
-    webgazer.showVideoPreview(true);
-    webgazer.showPredictionPoints(true);
-  }
+  document.addEventListener("blink", (e) => {
+    console.log("blink event received", e.detail);
+    const currentTime = Date.now();
+    if (currentTime - lastBlinkTime > BLINK_DEBOUNCE) {
+      updatePoem(poemContainer);
+      lastBlinkTime = currentTime;
+    }
+  });
 
   updatePoem(poemContainer);
 });
