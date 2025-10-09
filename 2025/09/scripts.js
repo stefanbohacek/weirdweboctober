@@ -28,9 +28,9 @@ ready(async () => {
   console.log("window.webgazer", window.webgazer);
 
   if (window.webgazer) {
-    let wasLookingAway = false;
-    let hasSeenValidData = false;
+    let previousDataWasValid = false;
     let dataCount = 0;
+    let validDataCount = 0;
 
     webgazer
       .setGazeListener((data, elapsedTime) => {
@@ -38,21 +38,24 @@ ready(async () => {
 
         if (dataCount % 60 === 0) {
           console.log({
-            data,
-            hasSeenValidData,
+            data: data !== null,
+            validDataCount,
+            totalCount: dataCount
           });
         }
 
-        if (data != null) {
-          hasSeenValidData = true;
-          wasLookingAway = false;
+        const currentDataIsValid = data !== null;
+
+        if (currentDataIsValid) {
+          validDataCount++;
         }
 
-        if (data == null && hasSeenValidData && !wasLookingAway) {
+        if (previousDataWasValid && !currentDataIsValid && validDataCount > 30) {
           console.log("blink detected");
           updatePoem(poemContainer);
-          wasLookingAway = true;
         }
+
+        previousDataWasValid = currentDataIsValid;
       })
       .begin();
 
