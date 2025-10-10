@@ -1,0 +1,34 @@
+body {
+  font-family: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+    "Sitka Small", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 2rem;
+}
+
+#warning-container {
+  width: 100%;
+  max-width: 600px;
+  min-height: 400px;
+}
+
+#warning {
+  min-height: 20vh;
+}
+
+h1 a {
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  font-family: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+    "Sitka Small", serif;
+  font-size: 2rem;
+}

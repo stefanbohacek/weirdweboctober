@@ -19,11 +19,11 @@ body {
   font-size: 1.4rem;
 }
 
-main{
+main {
   max-width: 960px;
 }
 
-main.fluid{
+main.fluid {
   max-width: initial;
 }
 
@@ -34,19 +34,19 @@ main.fluid{
   border: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-s{
-  opacity: .75;
+s {
+  opacity: 0.75;
 }
 
-button{
+button {
   padding: 8px;
   font-weight: bold;
 }
 
-.z-10{
+.z-10 {
   z-index: 10;
 }
