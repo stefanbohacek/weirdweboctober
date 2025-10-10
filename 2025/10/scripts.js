@@ -25,10 +25,12 @@ ready(async () => {
       document.body.style.color = "#fff";
       document.querySelector("h1 a").style.color = "#fff";
       warningText.innerHTML = /* html */ `
-        <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/amn3kn0XPLQ?si=96b8sdK913OSO8Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>
-          <a target="_blank" style="color:#fff" href="https://en.wikipedia.org/wiki/Ray_cat">Ray cat</a>
-        </p>
+        <div class="iframe-container">
+          <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/amn3kn0XPLQ?si=96b8sdK913OSO8Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+          <p>
+            <a target="_blank" style="color:#fff" href="https://en.wikipedia.org/wiki/Ray_cat">Ray cat</a>
+          </p>
       `;
     }
   });
