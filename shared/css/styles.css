@@ -19,14 +19,16 @@ body {
   font-size: 1.4rem;
 }
 
-main {
+main, .container{
   max-width: 960px;
 }
+
 
 main.fluid {
   max-width: initial;
 }
 
+blockquote.mastodon-embed iframe,
 #iframe.mastodon-embed {
   width: 400px;
   max-width: 100%;

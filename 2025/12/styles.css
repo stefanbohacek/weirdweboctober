@@ -1,0 +1,64 @@
+.poll-container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  max-width: 100vw;
+}
+
+.previous {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+}
+
+@media (min-width: 900px) {
+  .poll-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "current previous";
+  }
+
+  .current {
+    grid-area: current;
+  }
+
+  .previous {
+    grid-area: previous;
+  }
+}
+
+@media (min-width: 1300px) {
+  .poll-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "current previous previous previous";
+  }
+
+  .current {
+    grid-area: current;
+  }
+
+  .previous {
+    grid-area: previous;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . . .";
+  }
+}
+
+.mt-x .mastodon-embed {
+  margin-top: 4px !important;
+}
+
+@media (min-width: 1300px) {
+  .mt-x .mastodon-embed {
+    margin-top: 6rem !important;
+  }
+}
+
+.mastodon-embed-container:has(blockquote) {
+  padding-left: 4px;
+  padding-right: 4px;
+}
