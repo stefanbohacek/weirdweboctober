@@ -18,6 +18,14 @@
   display: none;
 }
 
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -222,6 +230,31 @@
 
 .m-5 {
   margin: 5rem;
+}
+
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-5 {
+  padding: 5rem;
 }
 
 .pl-0 {
