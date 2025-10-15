@@ -45,5 +45,12 @@ ready(async () => {
         },
       ],
     },
+    options: {
+      scales: {
+        x: {
+          type: "category",
+        },
+      },
+    },
   });
 });
