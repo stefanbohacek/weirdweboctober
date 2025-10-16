@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"
+  class="h-100">
+
+<head>
+  <base href="/2025/16/">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="They live. We sleep.">
+  <meta name="fediverse:creator"
+    content="@stefan@stefanbohacek.online" />
+  <title>Weird Web October 2025 #16: Transition</title>
+  <link href="styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/styles.css"
+    rel="stylesheet">
+  <link href="../../shared/css/helpers.css"
+    rel="stylesheet">
+  <link rel="preload"
+    as="fetch"
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/16/">
+  <link rel="octo:octothorpes"
+    href="weirdweboctober">
+  <link rel="octo:octothorpes"
+    href="Transition">
+</head>
+
+<body>
+  <main>
+    <h1>
+      <a href="/">Weird Web October 2025</a> #16: Transition
+    </h1>
+    <div class="image-container"
+      role="img"
+      aria-label="A slider below an image reveals another image underneath it.">
+      <img id="version-image"
+        src="./images/version-1.0.png"
+        alt="Screenshot of my personal website"
+        width="640"
+        height="449" />
+    </div>
+<div class="slider-control">
+  <label for="slider">
+    <span id="slider-value">Loading...</span>
+  </label>
+  <input type="range"
+    class="mt-2"
+    min="0"
+    max="0"
+    value="0"
+    id="slider"
+    aria-valuemin="0"
+    aria-valuemax="0"
+    aria-valuenow="0"
+    aria-label="Cycle through website version screenshots">
+  <p class="text-center text-sm">
+    <a href="https://stefanbohacek.com">Visit stefanbohacek.com</a>
+  </p>
+</div>
+  </main>
+
+  <script type="module"
+    src="scripts.js"></script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setExcludedQueryParams", ["token"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://matomo.stefanbohacek.com/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '30']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</body>
+
+</html>
