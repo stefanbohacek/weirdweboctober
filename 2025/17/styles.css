@@ -1,0 +1,102 @@
+body {
+  font-family: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+    "Sitka Small", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
+}
+
+body.on {
+  background-color: #fef08a !important;
+  color: #000;
+}
+
+body.off {
+  background-color: #1e3a8a !important;
+  color: #fff;
+}
+
+body.on h1 a {
+  color: #000;
+}
+
+body.off h1 a {
+  color: #fff;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-items: center;
+}
+
+.lightbulb-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.emoji-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#lightbulb.off {
+  filter: grayscale(1);
+}
+
+#lightbulb {
+  font-size: clamp(6rem, 16vw, 16rem);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.1s ease;
+}
+
+#lightbulb:hover {
+  transform: scale(1.05);
+}
+
+#lightbulb:active {
+  transform: scale(0.95);
+}
+
+#lightbulb:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 10px;
+}
+
+.emoji-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: clamp(6rem, 16vw, 16rem);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
