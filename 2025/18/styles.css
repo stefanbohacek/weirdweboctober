@@ -1,0 +1,45 @@
+@keyframes sway {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) perspective(400px) rotateY(-2deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) perspective(400px) rotateY(2deg);
+  }
+}
+
+.emoji-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  transition: left 0.5s ease-out, top 0.5s ease-out,
+    font-size 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  user-select: none;
+  animation: sway 4s ease-in-out infinite;
+  pointer-events: auto;
+  opacity: 0;
+}
+
+.emoji.visible {
+  opacity: 1;
+}
+
+.emoji:hover {
+  opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emoji {
+    animation: none;
+    transition: none;
+  }
+}

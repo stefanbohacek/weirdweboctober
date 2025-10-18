@@ -26,6 +26,30 @@
   display: inline-block;
 }
 
+.position-absolute{
+  position: absolute;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -52,7 +76,7 @@
   border-radius: 8px;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -152,7 +176,6 @@
   margin-top: 5rem;
 }
 
-
 .mx-0 {
   margin-left: 0;
   margin-right: 0;
@@ -231,7 +254,6 @@
 .m-5 {
   margin: 5rem;
 }
-
 
 .p-0 {
   padding: 0;

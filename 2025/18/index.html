@@ -3,15 +3,15 @@
   class="h-100">
 
 <head>
-  <base href="/2025/15/">
+  <base href="/2025/18/">
   <meta charset="utf-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Doubling the size.">
+    content="Real-time trading value visualization with animated emoji indicators.">
   <meta name="fediverse:creator"
     content="@stefan@stefanbohacek.online" />
-  <title>Weird Web October 2025 #15: Unicode</title>
+  <title>Weird Web October 2025 #18: Trading</title>
   <link href="../../shared/css/styles.css"
     rel="stylesheet">
   <link href="styles.css"
@@ -22,30 +22,41 @@
     rel="stylesheet">
   <link rel="preload"
     as="fetch"
-    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/15/">
+    href="https://octothorp.es/?uri=https://weirdweboctober.stefanbohacek.com/2025/18/">
   <link rel="octo:octothorpes"
     href="weirdweboctober">
   <link rel="octo:octothorpes"
-    href="Unicode">
+    href="Trading">
 </head>
 
 <body>
   <main class="mx-auto">
     <h1>
-      <a href="/">Weird Web October 2025</a> #15: Unicode
+      <a href="/">Weird Web October 2025</a> #18: Trading
     </h1>
-    <div>
-      <canvas id="chart"></canvas>
+    <div class="position-relative">
+      <canvas id="chart"
+        role="img"
+        aria-label="Real-time trading value chart showing fluctuating percentages"></canvas>
+      <div class="emoji-wrapper position-absolute pointer-events-none"
+        aria-hidden="true">
+        <span class="emoji"
+          id="emoji"
+          role="img"
+          aria-label="Emoji stock market sentiment indicator">📈</span>
+      </div>
+      <div id="live-region"
+        class="visually-hidden"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"></div>
     </div>
-    <p>Source: <a href="https://en.wikibooks.org/wiki/Unicode/Versions">Unicode Versions, Wikibooks</a></p>
   </main>
   <script src="../../shared/libs/chart.js/4.5.1/chart.js"></script>
   <script type="module"
     src="scripts.js"></script>
-  <!-- Matomo -->
   <script>
     var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(["setExcludedQueryParams", ["token"]]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
@@ -57,7 +68,6 @@
       g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
     })();
   </script>
-  <!-- End Matomo Code -->
 </body>
 
 </html>
